@@ -1,72 +1,72 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <FTSWTool>
-    <Template version="1.0.0.0" />
     <CurrentDevice>RS31H</CurrentDevice>
+    <Template version="1.0.0.0"/>
     <DeviceList>
         <Device name="RS27H">
+            <DefaultUsbMode>24</DefaultUsbMode>
             <Button id="0">
-                <ShortCut page="12" type="1" modifierKeys="0">
+                <ShortCut modifierKeys="0" type="1" page="12">
                     <KeyCode>182</KeyCode>
                     <KeyCode>0</KeyCode>
                 </ShortCut>
             </Button>
             <Button id="2">
-                <ShortCut page="12" type="1" modifierKeys="0">
+                <ShortCut modifierKeys="0" type="1" page="12">
                     <KeyCode>205</KeyCode>
                     <KeyCode>0</KeyCode>
                 </ShortCut>
             </Button>
             <Button id="1">
-                <ShortCut page="12" type="1" modifierKeys="0">
+                <ShortCut modifierKeys="0" type="1" page="12">
                     <KeyCode>181</KeyCode>
                     <KeyCode>0</KeyCode>
                 </ShortCut>
             </Button>
-            <DefaultUsbMode>24</DefaultUsbMode>
         </Device>
         <Device name="RS28H">
+            <DefaultUsbMode>24</DefaultUsbMode>
             <Button id="0">
-                <ShortCut page="12" type="1" modifierKeys="0">
+                <ShortCut modifierKeys="0" type="1" page="12">
                     <KeyCode>182</KeyCode>
                     <KeyCode>0</KeyCode>
                 </ShortCut>
             </Button>
             <Button id="2">
-                <ShortCut page="12" type="1" modifierKeys="0">
+                <ShortCut modifierKeys="0" type="1" page="12">
                     <KeyCode>181</KeyCode>
                     <KeyCode>0</KeyCode>
                 </ShortCut>
             </Button>
             <Button id="1">
-                <ShortCut page="12" type="1" modifierKeys="0">
+                <ShortCut modifierKeys="0" type="1" page="12">
                     <KeyCode>205</KeyCode>
                     <KeyCode>0</KeyCode>
                 </ShortCut>
             </Button>
-            <DefaultUsbMode>24</DefaultUsbMode>
         </Device>
         <Device name="RS31H">
+            <DefaultUsbMode>24</DefaultUsbMode>
             <Button id="0">
-                <ShortCut page="7" type="0" modifierKeys="0">
-                    <KeyCode>104</KeyCode>
-                </ShortCut>
-            </Button>
-            <Button id="2">
-                <ShortCut page="7" type="0" modifierKeys="0">
-                    <KeyCode>105</KeyCode>
-                </ShortCut>
-            </Button>
-            <Button id="1">
-                <ShortCut page="7" type="0" modifierKeys="0">
-                    <KeyCode>106</KeyCode>
-                </ShortCut>
-            </Button>
-            <Button id="3">
-                <ShortCut page="7" type="0" modifierKeys="0">
+                <ShortCut modifierKeys="0" type="0" page="7">
                     <KeyCode>107</KeyCode>
                 </ShortCut>
             </Button>
-            <DefaultUsbMode>24</DefaultUsbMode>
+            <Button id="2">
+                <ShortCut modifierKeys="0" type="0" page="7">
+                    <KeyCode>108</KeyCode>
+                </ShortCut>
+            </Button>
+            <Button id="1">
+                <ShortCut modifierKeys="0" type="0" page="7">
+                    <KeyCode>109</KeyCode>
+                </ShortCut>
+            </Button>
+            <Button id="3">
+                <ShortCut modifierKeys="0" type="0" page="7">
+                    <KeyCode>110</KeyCode>
+                </ShortCut>
+            </Button>
         </Device>
     </DeviceList>
 </FTSWTool>
