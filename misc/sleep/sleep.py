@@ -29,7 +29,7 @@ class Actions:
         """Wake Talon from sleep"""
         actions.user.abort_current_phrase()
         actions.speech.enable()
-        actions.user.mouse_wake()
+        # actions.user.mouse_wake()
         actions.user.notify("Talon awake")
         if not actions.user.sound_microphone_enabled():
             actions.user.sound_microphone_enable(True)
