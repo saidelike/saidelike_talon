@@ -1,5 +1,3 @@
-Source: https://github.com/AndreasArvidsson/andreas-talon/tree/eae6a718d4c9c92ae2818144a8701158c7304ecf/misc/foot_switch
-
 # Foot switch integration
 
 ## Hardware

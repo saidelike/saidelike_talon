@@ -1,4 +1,3 @@
-# https://github.com/AndreasArvidsson/andreas-talon/blob/3f27d1de3a08773de885f37bc4c19759b198782b/misc/talon_helpers/talon_helpers.talon
 talon print context:
     name = app.name()
     executable = app.executable()

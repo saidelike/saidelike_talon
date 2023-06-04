@@ -1,4 +1,3 @@
-# Source: https://github.com/AndreasArvidsson/andreas-talon/blob/eae6a718d4c9c92ae2818144a8701158c7304ecf/misc/mouse/mouse_scroll.py
 from talon import Module, actions, app, ui, cron
 import time
 
