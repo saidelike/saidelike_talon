@@ -1,22 +1,22 @@
 {
-	"cluck": {
-		"sounds": ["alveolar_click"],
-		"threshold": {
-			">power": 20,
-			">probability": 0.999
-		},
-		"throttle": {
-			"cluck": 0.12
-		}
-	},
-	"tut": {
-		"sounds": ["lateral_click"],
-		"threshold": {
-			">power": 200,
-			">probability": 0.9
-		},
-		"throttle": {
-			"tut": 0.12
-		}
-	}
+  "cluck": {
+    "sounds": ["alveolar_click"],
+    "threshold": {
+      ">power": 20,
+      ">probability": 0.999
+    },
+    "throttle": {
+      "cluck": 0.12
+    }
+  },
+  "tut": {
+    "sounds": ["lateral_click"],
+    "threshold": {
+      ">power": 200,
+      ">probability": 0.9
+    },
+    "throttle": {
+      "tut": 0.12
+    }
+  }
 }
