@@ -13,9 +13,13 @@ parrot(pop):
 parrot(shush):
     print("shush")
     user.noise_debounce("shush", true)
-parrot(shush:stop):         user.noise_debounce("shush", false)
+parrot(shush:stop):
+    print("shush stop")
+    user.noise_debounce("shush", false)
 
 parrot(hiss):
     print("hiss")
     user.noise_debounce("hiss", true)
-parrot(hiss:stop):          user.noise_debounce("hiss", false)
+parrot(hiss:stop):
+    print("hiss stop")
+    user.noise_debounce("hiss", false)

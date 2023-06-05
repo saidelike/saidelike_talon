@@ -45,12 +45,11 @@
     "sounds": ["shush_noise"],
     "threshold": {
       ">power": 15,
-      ">probability": 0.9
+      ">probability": 0.95
     },
-    "graceperiod": 0.1,
+    "graceperiod": 0.05,
     "grace_threshold": {
-      ">power": 5,
-      ">probability": 0.4
+      ">power": 10
     }
   }
 }
