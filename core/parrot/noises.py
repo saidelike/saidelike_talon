@@ -16,22 +16,22 @@ mode: dictation
 
 @ctx.action_class("user")
 class UserActions:
-    def noise_pop():
-        actions.user.mouse_on_pop()
+    # def noise_pop():
+    #     actions.user.mouse_on_pop()
 
-    def noise_cluck():
-        if not last_command_is_sleep():
-            actions.core.repeat_phrase()
+    # def noise_cluck():
+    #     if not last_command_is_sleep():
+    #         actions.core.repeat_phrase()
 
     def noise_shush_start():
-        global shush_start
-        shush_start = time.perf_counter()
+        # global shush_start
+        # shush_start = time.perf_counter()
         actions.user.mouse_scrolling("up")
 
     def noise_shush_stop():
-        actions.user.abort_specific_phrases(
-            ["hash", "ssh"], shush_start, time.perf_counter()
-        )
+        # actions.user.abort_specific_phrases(
+        #     ["hash", "ssh"], shush_start, time.perf_counter()
+        # )
         actions.user.mouse_scroll_stop()
 
     def noise_hiss_start():
@@ -52,11 +52,11 @@ class Actions:
             cron.cancel(cron_jobs[name])
             state.pop(name)
 
-    def noise_pop():
-        """Noise pop"""
+    # def noise_pop():
+    #     """Noise pop"""
 
-    def noise_cluck():
-        """Noise cluck"""
+    # def noise_cluck():
+    #     """Noise cluck"""
 
     def noise_shush_start():
         """Noise shush started"""
