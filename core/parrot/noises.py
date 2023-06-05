@@ -16,8 +16,8 @@ mode: dictation
 
 @ctx.action_class("user")
 class UserActions:
-    # def noise_pop():
-    #     actions.user.mouse_on_pop()
+    def noise_pop():
+        actions.user.mouse_on_pop()
 
     # def noise_cluck():
     #     if not last_command_is_sleep():
@@ -52,8 +52,8 @@ class Actions:
             cron.cancel(cron_jobs[name])
             state.pop(name)
 
-    # def noise_pop():
-    #     """Noise pop"""
+    def noise_pop():
+        """Noise pop"""
 
     # def noise_cluck():
     #     """Noise cluck"""

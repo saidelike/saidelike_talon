@@ -10,6 +10,7 @@ parrot(tut):
 	print("tut")
 	user.cancel_in_flight_phrase_loud()
 
-parrot(pop):
-	print("pop")
-	user.noise_trigger_pop()
+# was calling into knausj. Disabled as using one to call into Andreas' code now
+# parrot(pop):
+# 	print("pop")
+# 	user.noise_trigger_pop()
