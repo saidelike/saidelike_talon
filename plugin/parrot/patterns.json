@@ -18,5 +18,15 @@
     "throttle": {
       "tut": 0.12
     }
+  },
+  "pop": {
+    "sounds": ["pop_noise"],
+    "threshold": {
+      ">power": 50,
+      ">probability": 0.999
+    },
+    "throttle": {
+      "pop": 0.15
+    }
   }
 }

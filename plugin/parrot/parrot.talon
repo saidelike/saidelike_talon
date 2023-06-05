@@ -9,3 +9,7 @@ parrot(tut):
 	#app.notify("tut")
 	print("tut")
 	user.cancel_in_flight_phrase_loud()
+
+parrot(pop):
+	print("pop")
+	user.noise_trigger_pop()
