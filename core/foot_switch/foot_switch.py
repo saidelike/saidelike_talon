@@ -141,8 +141,7 @@ class UserActions:
             actions.user.go_back()
 
     def foot_switch_right_down():
-        # simpler way to use "right pedal" to toggle eye tracker
-        actions.tracking.control_toggle()
+        pass
 
     def foot_switch_right_up(held: bool):
         pass
