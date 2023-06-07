@@ -7,6 +7,7 @@ mode: sleep
 # NOTE: disable this if it triggers when I unpower X2U or when I move my headset a bit
 # but both seem solved now
 parrot(cluck):
+    print("cluck")
     user.debug("Talon wake parrot noise. Power: {power}")
     user.talon_wake()
 
