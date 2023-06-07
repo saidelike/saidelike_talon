@@ -22,8 +22,8 @@
   "pop": {
     "sounds": ["pop_noise"],
     "threshold": {
-      ">power": 50,
-      ">probability": 0.999
+      ">power": 10,
+      ">probability": 0.99
     },
     "throttle": {
       "pop": 0.15
@@ -37,7 +37,7 @@
     },
     "graceperiod": 0.1,
     "grace_threshold": {
-      ">power": 5,
+      ">power": 10,
       ">probability": 0.6
     }
   },
@@ -45,7 +45,7 @@
     "sounds": ["shush_noise"],
     "threshold": {
       ">power": 15,
-      ">probability": 0.999
+      ">probability": 0.99
     },
     "graceperiod": 0.05,
     "grace_threshold": {
