@@ -45,7 +45,7 @@
     "sounds": ["shush_noise"],
     "threshold": {
       ">power": 15,
-      ">probability": 0.95
+      ">probability": 0.999
     },
     "graceperiod": 0.05,
     "grace_threshold": {
