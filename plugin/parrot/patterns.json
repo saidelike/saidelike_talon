@@ -12,7 +12,7 @@
   "tut": {
     "sounds": ["lateral_click"],
     "threshold": {
-      ">power": 200,
+      ">power": 40,
       ">probability": 0.9
     },
     "throttle": {

@@ -15,4 +15,4 @@ class Actions:
     def cancel_in_flight_phrase_loud():
         """Cancels phrase currently being spoken"""
         actions.user.cancel_in_flight_phrase()
-        app.notify("Cancelled phrase")
+        actions.user.notify("Cancelled phrase")
