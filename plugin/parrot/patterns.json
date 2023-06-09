@@ -12,11 +12,11 @@
   "tut": {
     "sounds": ["lateral_click"],
     "threshold": {
-      ">power": 40,
+      ">power": 15,
       ">probability": 0.9
     },
     "throttle": {
-      "tut": 0.12
+      "tut": 0.1
     }
   },
   "pop": {
