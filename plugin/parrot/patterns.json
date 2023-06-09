@@ -22,11 +22,11 @@
   "pop": {
     "sounds": ["pop_noise"],
     "threshold": {
-      ">power": 10,
-      ">probability": 0.99
+      ">power": 6,
+      ">probability": 0.96
     },
     "throttle": {
-      "pop": 0.15
+      "pop": 0.2
     }
   },
   "hiss": {
@@ -35,10 +35,9 @@
       ">power": 15,
       ">probability": 0.9
     },
-    "graceperiod": 0.1,
+    "graceperiod": 0.05,
     "grace_threshold": {
-      ">power": 10,
-      ">probability": 0.6
+      ">power": 10
     }
   },
   "shush": {
