@@ -183,3 +183,31 @@ class VoipActions:
     def foot_switch_left_up(held: bool):
         if held:
             actions.user.mute_microphone()
+
+
+# ---------- Global VLC control ----------
+ctx_vlc_control = Context()
+ctx_vlc_control.matches = r"""
+tag: user.vlc_control
+"""
+
+
+@ctx_vlc_control.action_class("user")
+class VlcControlActions:
+    def foot_switch_top_down():
+        pass  # disable scrolling feature
+
+    def foot_switch_center_down():
+        # global VLC shortcut to play/pause VLC
+        actions.key("shift-ctrl-f12")
+
+    def foot_switch_left_down():
+        # global VLC shortcut to navigate left
+        actions.key("shift-ctrl-f10")
+
+    def foot_switch_left_up(held: bool):
+        pass  # disable going back feature
+
+    def foot_switch_right_down():
+        # global VLC shortcut to navigate right
+        actions.key("shift-ctrl-f11")
