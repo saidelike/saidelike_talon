@@ -1,58 +1,68 @@
 {
   "cluck": {
-    "sounds": ["alveolar_click"],
+    "sounds": ["alveolar_click2"],
     "threshold": {
-      ">power": 20,
-      ">probability": 0.999
+      ">power": 8,
+      ">probability": 0.9999,
+      "<f0": 1200,
+      "<f1": 1000,
+      ">f2": 1000
     },
     "throttle": {
-      "cluck": 0.12
+      "cluck": 0.1
     }
   },
   "tut": {
-    "sounds": ["lateral_click"],
+    "sounds": ["lateral_click2"],
     "threshold": {
-      ">power": 15,
-      ">probability": 0.9
+      ">power": 80,
+      ">probability": 0.999,
+      "<f1": 1000,
+      ">f2": 1400
     },
     "throttle": {
       "tut": 0.1
     }
   },
   "pop": {
-    "sounds": ["pop_noise"],
+    "sounds": ["pop_noise2"],
     "threshold": {
-      ">power": 6,
-      ">probability": 0.96
+      ">power": 8,
+      ">probability": 0.997,
+      "<f0": 1000,
+      "<f1": 1000,
+      ">f2": 1000
     },
     "throttle": {
       "pop": 0.2
     }
   },
   "hiss": {
-    "sounds": ["hiss_noise"],
+    "sounds": ["hiss_noise2"],
     "threshold": {
       ">power": 10,
-      ">probability": 0.9,
+      ">probability": 0.99999,
+      ">f0": 5000,
+      "<f1": 800,
       ">f2": 5000
     },
     "graceperiod": 0.2,
     "grace_threshold": {
-      ">power": 6,
-      ">f2": 5000
+      ">power": 6
     }
   },
   "shush": {
-    "sounds": ["shush_noise"],
+    "sounds": ["shush_noise2"],
     "threshold": {
-      ">power": 8,
-      ">probability": 0.95,
-      ">f2": 2700
+      ">power": 20,
+      ">probability": 0.9999,
+      ">f0": 2700,
+      "<f1": 700,
+      ">f2": 2400
     },
     "graceperiod": 0.2,
     "grace_threshold": {
-      ">power": 4,
-      ">f2": 2700
+      ">power": 6
     }
   }
 }
