@@ -32,23 +32,27 @@
   "hiss": {
     "sounds": ["hiss_noise"],
     "threshold": {
-      ">power": 25,
-      ">probability": 0.97
+      ">power": 10,
+      ">probability": 0.9,
+      ">f2": 5000
     },
     "graceperiod": 0.2,
     "grace_threshold": {
-      ">power": 20
+      ">power": 6,
+      ">f2": 5000
     }
   },
   "shush": {
     "sounds": ["shush_noise"],
     "threshold": {
-      ">power": 40,
-      ">probability": 0.97
+      ">power": 8,
+      ">probability": 0.95,
+      ">f2": 2700
     },
     "graceperiod": 0.2,
     "grace_threshold": {
-      ">power": 30
+      ">power": 4,
+      ">f2": 2700
     }
   }
 }

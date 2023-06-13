@@ -1,5 +1,8 @@
 not mode: sleep
 -
+
+# XXX move to core/parrot/parrot2.talon or other
+
 parrot(cluck):
 	#app.notify("cluck")
 	print("cluck")
