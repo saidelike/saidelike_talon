@@ -32,10 +32,10 @@ class EditActions:
 
 @ctx.action_class("user")
 class UserActions:
-    def delete_word_right():
-        actions.user.select_word_right()
-        actions.sleep("100ms")
-        actions.edit.delete()
+    # def delete_word_right():
+    #     actions.user.select_word_right()
+    #     actions.sleep("100ms")
+    #     actions.edit.delete()
 
     def mute_microphone():
         actions.key("ctrl-shift-m")
