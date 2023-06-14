@@ -47,14 +47,16 @@
   "shush": {
     "sounds": ["shush_noise"],
     "threshold": {
-      ">power": 8,
-      ">probability": 0.95,
-      ">f2": 2700
+      ">power": 16,
+      ">probability": 0.991,
+      ">f0": 2700,
+      "<f1": 500,
+      ">f2": 2600
     },
     "graceperiod": 0.2,
     "grace_threshold": {
-      ">power": 4,
-      ">f2": 2700
+      ">power": 8,
+      ">f2": 2600
     }
   }
 }
