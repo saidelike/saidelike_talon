@@ -33,7 +33,9 @@
     "sounds": ["hiss_noise"],
     "threshold": {
       ">power": 10,
-      ">probability": 0.9,
+      ">probability": 0.992,
+      ">f0": 5000,
+      "<f1": 1000,
       ">f2": 5000
     },
     "graceperiod": 0.2,
