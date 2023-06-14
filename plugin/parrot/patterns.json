@@ -54,11 +54,11 @@
   "shush": {
     "sounds": ["shush_noise2"],
     "threshold": {
-      ">power": 20,
+      ">power": 14,
       ">probability": 0.9999,
-      ">f0": 2700,
+      ">f0": 2200,
       "<f1": 700,
-      ">f2": 2400
+      ">f2": 2300
     },
     "graceperiod": 0.2,
     "grace_threshold": {
