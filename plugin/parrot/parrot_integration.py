@@ -309,4 +309,3 @@ def on_pattern(f):
         parrot_delegate.set_patterns(json.load(f))
     except Exception:
         log_exception(f"[parrot] invalid pattern file: {pattern_path}")
-        return []
