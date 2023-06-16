@@ -10,30 +10,12 @@ parrot(pop):
 #     user.debug("cluck {power}")
 #     user.noise_cluck()
 
-parrot(shush):
-    #print("shush {power}")
-    user.debug("shush {power}")
-    user.noise_debounce("shush", true)
+# allow controlling if hiss/shush should be disabled
+(his|shush) enable: 
+    user.hiss_shush_frozen_toggle(false)
 
-parrot(shush:repeat):
-    #print("shush repeat {power}")
-    user.debug("shush repeat {power}")
+(his|shush) disable:
+    user.hiss_shush_frozen_toggle(true)
 
-parrot(shush:stop):
-    #print("shush stop {power}")
-    user.debug("shush stop {power}")
-    user.noise_debounce("shush", false)
-
-parrot(hiss):
-    #print("hiss {power}")
-    user.debug("hiss {power}")
-    user.noise_debounce("hiss", true)
-
-parrot(hiss:repeat):
-    #print("hiss repeat {power}")
-    user.debug("hiss repeat {power}")
-
-parrot(hiss:stop):
-    #print("hiss stop {power}")
-    user.debug("hiss stop {power}")
-    user.noise_debounce("hiss", false)
+(his|shush) [switch|toggle]:
+    user.hiss_shush_frozen_toggle()
