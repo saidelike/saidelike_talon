@@ -29,3 +29,4 @@ cursor print:               print("{mouse_x()}, {mouse_y()}")
 cursor copy:                clip.set_text("{mouse_x()}, {mouse_y()}")
 # ^cursor show$:              user.mouse_show_cursor()
 # ^cursor hide$:              user.mouse_hide_cursor()
+ 

@@ -307,5 +307,7 @@ system = ParrotSystem(model_path, parrot_delegate)
 def on_pattern(f):
     try:
         parrot_delegate.set_patterns(json.load(f))
+        # show that patters.json has been reloaded because at the moment talon doesn't log it
+        print(f"{pattern_path} reloaded")
     except Exception:
         log_exception(f"[parrot] invalid pattern file: {pattern_path}")
