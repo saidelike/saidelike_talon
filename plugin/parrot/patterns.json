@@ -58,5 +58,17 @@
       ">power": 8,
       ">f2": 2600
     }
+  },
+  "speech": {
+    "sounds": ["speech"],
+    "threshold": {
+      ">power": 15,
+      ">probability": 0.95
+    },
+    "throttle": {
+      "pop": 0.3,
+      "shush": 0.3,
+      "hiss": 0.3
+    }
   }
 }
