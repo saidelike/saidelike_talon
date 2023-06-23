@@ -86,7 +86,13 @@ class Actions:
 
     def mouse_scroll_speed_notify():
         """Notify scroll speed"""
-        actions.user.notify(f"Mouse scroll speed: {int(scroll_speed_dynamic*100)}%")
+        actions.user.notify(f"Mouse scroll speed: {int(setting_scroll_speed.get()*scroll_speed_dynamic*100)}%")
+
+    def mouse_scroll_speed_reset():
+        """Reset scroll speed"""
+        global scroll_speed_dynamic
+        scroll_speed_dynamic = 1
+        actions.user.mouse_scroll_speed_notify()
 
     def mouse_gaze_scroll():
         """Starts gaze scroll"""

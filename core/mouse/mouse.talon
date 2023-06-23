@@ -15,6 +15,7 @@ scroll speed show:          user.mouse_scroll_speed_notify()
 scroll speed <number_small>: user.mouse_scroll_speed_set(number_small)
 scroll speed up:            user.mouse_scroll_speed_increase()
 scroll speed down:          user.mouse_scroll_speed_decrease()
+scroll speed reset:         user.mouse_scroll_speed_reset()
 
 # Eye tracking
 track on:                   user.mouse_control_toggle(true)
