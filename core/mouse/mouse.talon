@@ -19,7 +19,7 @@ scroll speed down:          user.mouse_scroll_speed_decrease()
 # Eye tracking
 track on:                   user.mouse_control_toggle(true)
 track off:                  user.mouse_control_toggle(false)
-track:                      user.mouse_control_toggle()
+tracking:                   user.mouse_control_toggle()
 ^track calibrate$:          tracking.calibrate()
 ^track debug$:              tracking.control_debug_toggle()
 
@@ -29,4 +29,3 @@ cursor print:               print("{mouse_x()}, {mouse_y()}")
 cursor copy:                clip.set_text("{mouse_x()}, {mouse_y()}")
 # ^cursor show$:              user.mouse_show_cursor()
 # ^cursor hide$:              user.mouse_hide_cursor()
- 
