@@ -17,5 +17,8 @@ parrot(pop):
 (his|shush) disable:
     user.hiss_shush_frozen_toggle(true)
 
-(his|shush) [switch|toggle]:
+# we don't support just the "his/shush" command without saying
+# "switch" or "toggle" to avoid false positives
+# especially because we don't use it that often
+(his|shush) (switch|toggle):
     user.hiss_shush_frozen_toggle()
