@@ -191,23 +191,45 @@ ctx_vlc_control.matches = r"""
 tag: user.vlc_control
 """
 
-
+# On Windows, we could use the "down" events but on Linux it would fail
+# Indeed, pressing keys in the middle of hotkey handlers is sometimes problematic
+# And below we would execute "actions.key()" when handling a key() from the foot switch
+# and the "actions.key()" would not trigger on Linux if done on the "down" event, so
+# instead we do it on the "up" events
 @ctx_vlc_control.action_class("user")
 class VlcControlActions:
     def foot_switch_top_down():
+        # actions.user.debug(f"VlcControlActions:foot_switch_top_down()")
         pass  # disable scrolling feature
 
+    def foot_switch_top_up(held: bool):
+        # actions.user.debug(f"VlcControlActions:foot_switch_top_up()")
+        pass
+
     def foot_switch_center_down():
+        # actions.user.debug(f"VlcControlActions:foot_switch_center_down()")
+        pass
+
+    def foot_switch_center_up(held: bool):
+        # actions.user.debug(f"VlcControlActions:foot_switch_center_up()")
         # global VLC shortcut to play/pause VLC
         actions.key("shift-ctrl-f12")
 
     def foot_switch_left_down():
-        # global VLC shortcut to navigate left
-        actions.key("shift-ctrl-f10")
-
-    def foot_switch_left_up(held: bool):
+        # actions.user.debug(f"VlcControlActions:foot_switch_left_down()")
         pass  # disable going back feature
 
+    def foot_switch_left_up(held: bool):
+        # actions.user.debug(f"VlcControlActions:foot_switch_left_up()")
+        # global VLC shortcut to navigate left
+        actions.key("shift-ctrl-f10")
+        pass
+
     def foot_switch_right_down():
+        # actions.user.debug(f"VlcControlActions:foot_switch_right_down()")
+        pass
+
+    def foot_switch_right_up(held: bool):
+        # actions.user.debug(f"VlcControlActions:foot_switch_right_up()")
         # global VLC shortcut to navigate right
         actions.key("shift-ctrl-f11")
