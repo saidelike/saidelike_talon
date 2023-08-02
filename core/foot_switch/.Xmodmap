@@ -1,0 +1,6 @@
+! set F16 to F19 as valid keys
+
+keycode 194 = F16 F16 F16 F16
+keycode 195 = F17 F17 F17 F17
+keycode 196 = F18 F18 F18 F18
+keycode 197 = F19 F19 F19 F19
