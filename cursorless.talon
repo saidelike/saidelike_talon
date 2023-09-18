@@ -17,5 +17,5 @@ turtle <user.cursorless_target>:
 also <user.cursorless_target>:
     prev_command = user.history_get(1)
     # XXX - could move that code to Python and have it check that prev_command contains "this" before doing anything?
-    user.cursorless_single_target_command("setSelectionBefore", cursorless_target)
+    user.cursorless_command("setSelectionBefore", cursorless_target)
     user.engine_mimic(prev_command)
