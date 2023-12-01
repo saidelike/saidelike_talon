@@ -1,4 +1,5 @@
 # https://github.com/pokey/pokey_talon/blob/f301385f5a2bf96331e73ac4d23da4f03c9e7624/apps/vscode/copilot.talon
+# https://github.com/AndreasArvidsson/andreas-talon/blob/a2fa56197009e077363ab31a34049533474870d4/apps/vscode/vscode.talon#L277
 app: vscode
 -
 pilot jest: user.vscode("editor.action.inlineSuggest.trigger")
