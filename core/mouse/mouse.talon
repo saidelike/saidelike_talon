@@ -3,6 +3,9 @@ click {user.mouse_click}:   user.mouse_click(mouse_click)
 drag:                       user.mouse_drag()
 # disable to avoid conflicts with "comma"
 #con:                        user.mouse_click("control")
+# mimic the "stash" command from rango to open a link in a non focused new tab
+# then we can use the repeater parrot sound in order to opened several links
+stash:                        user.mouse_click("control")
 righter:                    user.mouse_click("right")
 
 # Scroll
@@ -21,7 +24,7 @@ scroll speed reset:         user.mouse_scroll_speed_reset()
 # Eye tracking
 track on:                   user.mouse_control_toggle(true)
 track off:                  user.mouse_control_toggle(false)
-tracking:                   user.mouse_control_toggle()
+track:                   user.mouse_control_toggle()
 ^track calibrate$:          tracking.calibrate()
 ^track debug$:              tracking.control_debug_toggle()
 
