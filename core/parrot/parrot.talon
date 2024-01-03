@@ -2,7 +2,6 @@ not mode: sleep
 -
 
 parrot(pop):
-    #print("pop {power}")
     user.debug("pop {power}")
     user.noise_pop()
 
@@ -25,7 +24,7 @@ parrot(pop):
 
 parrot(cluck):
 	#app.notify("cluck")
-	print("cluck")
+	user.debug("cluck")
 	core.repeat_phrase(1)
 	# temporary way to use a direct hardcoded command with "cluck"
 	# as I wanted to avoid the double repeat due to cluck having false positives
@@ -34,10 +33,10 @@ parrot(cluck):
 
 parrot(tut):
 	#app.notify("tut")
-	print("tut")
+	user.debug("tut")
 	user.cancel_in_flight_phrase_loud()
 
 # was calling into knausj. Disabled as using one to call into Andreas' code now
 # parrot(pop):
-# 	print("pop")
+# 	user.debug("pop")
 # 	user.noise_trigger_pop()
