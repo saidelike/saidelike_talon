@@ -1,4 +1,4 @@
-from talon import Module, Context, actions, clip, app, cron
+from talon import Module, Context, actions, clip, app, cron, settings
 from talon.skia.image import Image
 from talon.clip import MimeData
 from dataclasses import dataclass
@@ -237,7 +237,7 @@ def validate_number(number: range):
 
 def shrink():
     global clip_history
-    max_rows = setting_clipboard_manager_max_rows.get()
+    max_rows = settings.get('user.clipboard_manager_max_rows')
     if len(clip_history) > max_rows:
         clip_history = clip_history[:max_rows]
 

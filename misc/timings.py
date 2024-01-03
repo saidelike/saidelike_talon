@@ -1,4 +1,4 @@
-from talon import Module, actions
+from talon import Module, actions, settings 
 from talon.grammar import Phrase
 
 mod = Module()
@@ -29,7 +29,7 @@ class Actions:
             #     },
             # )
 
-            if settings_log.get():
+            if settings.get('user.timings_log'):
                 status = f"[audio]={meta['audio_ms']:.3f}ms "
                 status += f"[compile]={meta['compile_ms']:.3f}ms "
                 status += f"[emit]={meta['emit_ms']:.3f}ms "

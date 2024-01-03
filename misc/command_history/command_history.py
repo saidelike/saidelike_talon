@@ -1,4 +1,4 @@
-from talon import Module, ui
+from talon import Module, ui, settings
 from dataclasses import dataclass
 import time
 from ..analyze_phrase.types import AnalyzedPhraseWithActions
@@ -44,11 +44,11 @@ class Actions:
     def command_history_append(analyzed_phrase: AnalyzedPhraseWithActions):
         """Append command to history"""
         global history
-        ttl = ttl_setting.get()
+        ttl = settings.get('user.command_history_ttl')
         ttl = time.monotonic() + ttl if ttl > -1 else -1
         for i, cmd in enumerate(analyzed_phrase.commands):
             history.append(HistoryEntry(cmd.phrase, cmd.actions, ttl, i == 0))
-        history = history[-size_setting.get() :]
+        history = history[-settings.get('user.command_history_size') :]
 
     def command_history_toggle():
         """Toggles viewing the history"""

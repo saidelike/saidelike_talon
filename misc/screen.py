@@ -1,9 +1,9 @@
-from talon import Module, ui, cron
+from talon import Module, ui, cron, settings
 from talon.canvas import Canvas
 from talon.skia.imagefilter import ImageFilter
 
 mod = Module()
-show_subtitles = mod.setting("subtitles_show", bool, default=True).get()
+show_subtitles = settings.get('user.subtitles_show', default=True)
 subtitles_all_screens_setting = mod.setting(
     "subtitles_all_screens", bool, default=False
 )
@@ -61,7 +61,7 @@ class Actions:
 def show_text(text: str, is_subtitle: bool):
     canvas_list = subtitle_canvas if is_subtitle else notify_canvas
     clear_subtitles(canvas_list)
-    if subtitles_all_screens_setting.get():
+    if settings.get('user.subtitles_all_screens'):
         screens = ui.screens()
     else:
         screens = [ui.main_screen()]

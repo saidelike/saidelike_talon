@@ -1,4 +1,4 @@
-from talon import Module
+from talon import Module, settings
 
 mod = Module()
 
@@ -13,7 +13,7 @@ setting_level = mod.setting(
 class Actions:
     def debug(message: str):
         """Log debug message"""
-        if setting_level.get() == "debug":
+        if settings.get('user.log_level') == "debug":
             print(f"DEBUG: {message}")
 
     def info(message: str):
