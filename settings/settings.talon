@@ -9,7 +9,10 @@ settings():
     # temporarily disable it so we can actually see things in the talon log window    
     user.pretty_print_phrase = false
 
-    user.log_level = "debug"
+    # Show parrot sounds being said and regular talon debug logs
+    #user.log_level = "debug"
+    # disable it so we can actually see other things in the talon log window
+    user.log_level = "info"
 
     # Mouse scroll speed
     user.scroll_speed = 0.7

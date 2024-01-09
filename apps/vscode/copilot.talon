@@ -18,11 +18,13 @@ pilot copy <user.ordinal_or_last>:
     user.copilot_focus_code_block(ordinal_or_last)
     edit.copy()
 pilot bring <user.ordinal_or_last>: user.copilot_bring_code_block(ordinal_or_last)
+# comment next command when doing development in Cursorless to avoid warnings
 pilot bring <user.ordinal_or_last> {user.makeshift_destination} <user.cursorless_target>:
     user.cursorless_command(makeshift_destination, cursorless_target)
     user.copilot_bring_code_block(ordinal_or_last)
 pilot chat [<user.prose>]$:
     user.copilot_chat(prose or "")
+# comment next command when doing development in Cursorless to avoid warnings
 pilot {user.copilot_slash_command} <user.cursorless_target> [to <user.prose>]$:
     user.copilot_inline_chat(copilot_slash_command or "", cursorless_target, prose or "")
 pilot clear <user.cursorless_target>:
