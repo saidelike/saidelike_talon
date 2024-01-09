@@ -31,8 +31,8 @@ setting_max_col = mod.setting(
 
 class State:
     def __init__(self, canvas: skia.Canvas, dpi: float, numbered: bool):
-        self.max_rows = setting_max_rows.get()
-        self.max_cols = setting_max_col.get()
+        self.max_rows = settings.get("user.gui_max_rows")
+        self.max_cols = settings.get("user.gui_max_cols")
         self.canvas = canvas
         self.font_size = round(dpi * settings.get("imgui.scale") / 10)
         self.padding = self.rem(0.5)
