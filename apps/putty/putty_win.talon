@@ -12,6 +12,5 @@ tag(): user.generic_unix_shell
 # you can deactivate them if you do not use the application
 tag(): user.git
 #tag(): user.tig
-# tag(): user.kubectl
 tag(): user.file_manager
 #tag(): user.sql

@@ -22,8 +22,6 @@ ctx.tags = [
     "user.generic_unix_shell",
     "user.file_manager",
     "user.git",
-    # "user.tig",
-    # "user.kubectl",
 ]
 
 # directories_to_remap = {}
