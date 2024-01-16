@@ -187,6 +187,9 @@ class UserActions:
     def find_replace_confirm():
         actions.key("enter")
 
+    def find_replace_everywhere_confirm():
+        actions.key("ctrl-shift-1")
+
     def find_replace_confirm_all():
         actions.key("ctrl-alt-enter")
 

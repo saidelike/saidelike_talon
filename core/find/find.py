@@ -15,6 +15,12 @@ class Actions:
         if text:
             actions.insert(text)
 
+    def find_everywhere_next():
+        """Find next result in entire project/all files"""
+
+    def find_everywhere_previous():
+        """Find previous result in entire project/all files"""
+
     def find_replace(text: str = None):
         """Find and replace in current file/editor"""
         actions.key("ctrl-h")
@@ -30,6 +36,9 @@ class Actions:
     def find_replace_confirm():
         """Confirm replace current"""
 
+    def find_replace_everywhere_confirm():
+        """Confirm replace current in entire project/all files"""
+
     def find_replace_confirm_all():
         """Confirm replace all"""
 
@@ -44,3 +53,15 @@ class Actions:
 
     def find_replace_toggle_preserve_case():
         """Toggles replace preserve case"""
+
+    def find_reference_previous():
+        """Find previous result in referenced symbol"""
+
+    def find_reference_next():
+        """Find next result in referenced symbol"""
+
+    def find_definition_previous():
+        """Find previous result in followed/definition symbol"""
+
+    def find_definition_next():
+        """Find next result in followed/definition symbol"""
