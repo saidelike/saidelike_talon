@@ -1,4 +1,4 @@
-from talon import Module, ui, settings
+from talon import Module, ui, settings, actions, app
 from dataclasses import dataclass
 import time, os
 from ..analyze_phrase.types import AnalyzedPhraseWithActions
@@ -32,7 +32,7 @@ class HistoryEntry:
 # I don't really understand the x/y parameters but this puts it close to the top right corner
 # of my left screen so it does the job
 # @imgui.open(screen=ui.screen.screens()[1], x=0.2, y=0.0)
-# this prints it in the top left corner of my left screen
+# this opens it in the top left corner of my left screen
 @imgui.open(screen=ui.screen.screens()[1], x=0.0, y=0.0)
 def gui(gui: imgui.GUI):
     t = time.monotonic()
@@ -121,3 +121,10 @@ class Actions:
             display_size = 3
         else:
             display_size -= 5
+
+
+def on_ready():
+    actions.user.command_history_toggle()
+
+
+app.register("ready", on_ready)
