@@ -139,10 +139,10 @@ def get_captures(capture: Capture) -> AnalyzedCapture:
             name = None
         elif isinstance(c, VMCapture):
             phrase = " ".join(c.unmapped())
-            name = c._name
+            name = c.name
         elif isinstance(c, VMListCapture):
-            phrase = c._value
-            name = c._name
+            phrase = c.value
+            name = c.name
         else:
             raise Exception(f"Unknown capture type '{type(c)}'")
 
