@@ -1,0 +1,1 @@
+^help (running|focus)$:     user.help_running_apps_toggle()
